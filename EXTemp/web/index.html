@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Temperature Calculator</h1>
+        <h1>C = Celsius, F = Fahrenheit</h1>
+        <form name = "TempText" id = "69">
+            <input type="text" name="temp" value="" />
+            <br>
+            &emsp;
+            <input type="submit" value="C > F" onclick = "ctmp()"/>
+            &emsp;
+            <input type="submit" value="F > C" onclick = "ftmp()"/>
+        </form>
+        <script>
+            tmp = document.getElementById("69");
+            function ctmp() {
+                tmp.action = "tempjsp.jsp";
+            }
+            function ftmp() {
+                tmp.action = "TempServlet";
+            }
+        </script>
+    </body>
+</html>
