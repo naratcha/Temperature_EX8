@@ -16,7 +16,7 @@
         <h1>Celsius > Fahrenheit</h1>
         <%
             double Ctemp = Double.parseDouble(request.getParameter("temp"));
-            double Ftemp = Ctemp * 33.8;
+            double Ftemp = (Ctemp * 1.8) + 32;
             out.print(Ctemp + " Celsius = " + Ftemp + " Fahrenheit");
         %>
     </body>
